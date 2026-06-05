@@ -1,0 +1,73 @@
+/* ============================================
+   CONFIGURATION TYPOGRAPHIE (Nunito & Source Sans 3)
+   ============================================ */
+
+/* 1. Importation combinée et optimisée depuis Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap");
+
+:root {
+  /* 2. Déclaration des familles de polices */
+  --font-titles: "Nunito", system-ui, -apple-system, sans-serif;
+  --font-body: "Source Sans 3", system-ui, -apple-system, sans-serif;
+
+  /* 3. Échelle des tailles (Type Scale) */
+  --fs-xs: 0.75rem; /* 12px - Badges, petites légendes */
+  --fs-sm: 0.875rem; /* 14px - Liens navigation, contenu tableaux, labels */
+  --fs-base: 1rem; /* 16px - Texte général de l'application */
+  --fs-md: 1.125rem; /* 18px - Sous-titres ou grands textes */
+  --fs-lg: 1.35rem; /* ~22px - Titres de sections / Cartes */
+  --fs-xl: 1.75rem; /* 28px - Grands titres de pages (h1) */
+  --fs-2xl: 2.25rem; /* 36px - Chiffres clés du Dashboard */
+
+  /* 4. Épaisseurs (Weights) */
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-extra-bold: 800;
+}
+
+/* ============================================
+   APPLICATION DES STYLES SÉMANTIQUES
+   ============================================ */
+
+/* Style par défaut pour toute l'application (Texte) */
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-normal);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Application de Nunito sur les titres principaux */
+h1,
+h2,
+h3 {
+  font-family: var(--font-titles);
+  color: var(--text-main, #0f172a); /* Utilise ta variable couleur, ou noir par défaut */
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-extra-bold);
+}
+
+h2 {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-bold);
+}
+
+h3 {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+}
+
+/* Forcer les éléments de formulaire à utiliser Source Sans 3 (complément de  reset) */
+input,
+textarea,
+select,
+button {
+  font-family: var(--font-body);
+}

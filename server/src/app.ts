@@ -57,8 +57,6 @@ app.use(
 // app.use(express.text());
 // app.use(express.raw());
 
-/* ************************************************************************* */
-
 // Import the API router
 import router from "./router";
 

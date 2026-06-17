@@ -1,0 +1,136 @@
+/* Conteneur principal de la page */
+.dashboard_container {
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* En-tête du tableau de bord */
+.dashboard_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.h1 {
+  font-size: 1.8rem;
+  color: #1a365d; /* Bleu pro / corporate */
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Lien de retour */
+.link_home {
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.link_home:hover {
+  background-color: #f7fafc;
+  color: #2d3748;
+  border-color: #cbd5e0;
+}
+
+/* Zone de contenu principal */
+.main_content {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Section d'import du fichier CSV */
+.upload_section {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.upload_label {
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 0.95rem;
+}
+
+.file_input {
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+/* Section des données (Filtres + Tableau) */
+.data_section {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.h2_subtitle {
+  font-size: 1.2rem;
+  color: #2d3748;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  border-bottom: 2px solid #edf2f7;
+  padding-bottom: 0.5rem;
+}
+
+/* Structure du Tableau */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: left;
+}
+
+/* Ligne d'en-tête */
+.tr {
+  background-color: #f7fafc;
+}
+
+.table th {
+  color: #4a5568;
+  font-weight: 600;
+  padding: 12px 16px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+/* Cellules du corps du tableau */
+.table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #edf2f7;
+  color: #4a5568;
+}
+
+/* Effet au survol des lignes du tableau */
+.table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+/* Classe bonus pour nettoyer ton dernier style inline */
+.no_results {
+  padding: 2.5rem;
+  text-align: center;
+  color: #718096;
+  font-style: italic;
+  background-color: #f7fafc;
+  border-radius: 6px;
+  border: 1px dashed #e2e8f0;
+  margin-top: 1rem;
+}
